@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Montserrat:wght@300;400;500&display=swap');
+
+:root {
+    --color-white: #fff;
+    --color-dark: #181719;
+    --color-dark1: #828282;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 70px;
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 46px 0 153px 0;
+    /* height: 3.5rem; */
+}
+
+.logo {
+    font-size: 14px;
+    font-family: Crimson Pro;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 8px;
+    border: 1px solid var(--color-white);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 86px;
+}
+
+nav a {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color-white);
+}
+
+nav a:hover {
+    transition: 0.2s;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-white);
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 87px;
+    align-items: center;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+main h1 {
+    font-size: 48px;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+main p {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.link span {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 8px;
+}
+
+.img-1 {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.10);
+}
+
+.right {
+    width: 60%;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    top: -110px;
+    left: 200px;
+    background: var(--color-dark);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 55%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card p {
+    padding: 34px 0 34px 10px;
+    font-size: 24px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 18px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text span:nth-of-type(2) {
+    color: var(--color-dark1);
+    font-size: 12px;
+    font-family: "Montserrat" sans-serif;
+    font-weight: 500;
+}
+
+.perfil img {
+    display: block;
+    width: 100%;
+    max-width: 85px;
+    border-radius: 50%;
+}
+.btn_icon_header{
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+
+}
+@media (max-width: 990px) {
+    body{
+        margin: 0 12px;
+    }
+    header{
+        margin-bottom: 40px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navgation_header{
+        z-index: 3;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: var(--color-dark);
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        animation-duration: 0.1s;
+        margin-left: -100vw;
+        transition: 1s;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card{
+        left: 30px;
+        min-width: 300px;
+        width: 90%;
+    }
+}

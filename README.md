@@ -36,7 +36,7 @@
 
 ## Overview
 
-<img src="asssetis/desktop.png" alt="">
+<img src="../interior-consultant-master/asssetis/desktop.png" alt="">
 <img src="asssetis/mobile.png" alt="">
 <img src="asssetis/menu.png" alt="">
 
